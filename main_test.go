@@ -27,7 +27,6 @@ func TestAddUser(t *testing.T) {
 			WithArgs("john.doe@example.com").
 			WillReturnRows(sqlmock.NewRows([]string{"count"}).AddRow(0))
 
-			// Define your expectations for SQL operations
 		mock.ExpectBegin()
 		mock.ExpectQuery("^INSERT INTO \"users\" (.+)$").
 			WillReturnRows(sqlmock.NewRows([]string{"id"}).AddRow(1))
