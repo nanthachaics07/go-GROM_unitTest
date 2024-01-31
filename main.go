@@ -52,5 +52,5 @@ func AddUser(db *gorm.DB, fullname, email string, age int) error {
 func main() {
 	db := InitializeDB()
 
-	AddUser(db, "John Doe", "jane.doe@example.com", 30)
+	AddUser(db, "Jhon Zenaaa", "jane.smitttt@test.com", 22)
 }
